@@ -54,4 +54,5 @@ I had two _Aha!_ moments understanding prototype based inheritance:
 * CoffeeScript `__extends` - _not quite librifiable since generates code_
 * node's `util.inherits` - _doesn't copy data, just functions_
 * lodash `_.create` - _[half of the puzzle](http://lodash.com/docs#create) still requires knowledge of prototype_
-* John Resig's `Class.extend` - [Winner](http://ejohn.org/blog/simple-javascript-inheritance/)!
+* John Resig's `Class.extend` - [Winner](https://github.com/adamloving/js-extend-demo/blob/master/extend.js)!
+  * I added a couple lines to copy class data + methods on to the derived class (inspired by CoffeeScript __extend)
