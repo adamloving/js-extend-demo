@@ -15,6 +15,10 @@ A.prototype.run = function() {
 // B is defined below! (function declaration runs first)
 B.prototype = new A(); // B extends A
 
+// New school: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create
+// B.prototype = Object.create(A.prototype);
+// B.prototype.constructor = A;
+
 function B() { 
   A.call(this); // call super constructor
   this.data = 'banana';
